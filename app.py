@@ -6,6 +6,9 @@ from catboost import CatBoostRegressor
 from keras.models import load_model
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.linear_model import Ridge
+from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor, StackingRegressor
+from sklearn.preprocessing import StandardScaler
 
 st.set_page_config(page_title="Предсказание цены авто", layout="wide")
 
